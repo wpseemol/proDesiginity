@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>esignity PRO | Design Studio</title>
+        <!-- Fonts and Icons -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <!-- Background Orbs -->
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+
+        <!-- NAVBAR -->
+        <header>
+            <div class="brand-logo">
+                <div class="logo-bg-shape"></div>
+                <div class="logo-text">
+                    esig<span class="i-char">i</span>nity
+                    <span class="pro-text">PRO</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" class="nav-link active" data-page="home"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link" data-page="about">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link" data-page="contact"
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main>
+            <!-- HOME SECTION -->
+            <section id="home" class="page-section active">
+                <div class="hero">
+                    <h1>Creative Design<br />Solutions</h1>
+                    <p>
+                        We blend modern aesthetics with function to bring your
+                        brand's identity to life. esignity PRO is dedicated to
+                        visionary design.
+                    </p>
+                    <a
+                        href="#"
+                        class="cta-btn"
+                        onclick="
+                            navigateTo('contact');
+                            return false;
+                        "
+                        >Start a Project</a
+                    >
+                </div>
+            </section>
+
+            <!-- ABOUT SECTION -->
+            <section id="about" class="page-section">
+                <div class="about-content">
+                    <h2>Who We Are</h2>
+                    <p>
+                        <span class="highlight">esignity PRO</span> is a
+                        design-focused creative agency dedicated to pushing the
+                        boundaries of visual identity.
+                    </p>
+                    <p>
+                        Our approach combines minimalist aesthetics with
+                        powerful storytelling. We don't just create designs; we
+                        craft experiences that resonate with your audience.
+                    </p>
+                    <p>
+                        From branding to digital interfaces, we are your
+                        partners in building a strong, memorable, and
+                        <span class="highlight">modern</span> presence.
+                    </p>
+                </div>
+            </section>
+
+            <!-- CONTACT SECTION -->
+            <section id="contact" class="page-section">
+                <div class="contact-content">
+                    <h2>Get In Touch</h2>
+                    <div class="contact-card">
+                        <!-- Facebook Link -->
+                        <div class="contact-item">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <a
+                                href="https://www.facebook.com/proDesiginity"
+                                target="_blank"
+                                >facebook.com/proDesiginity</a
+                            >
+                        </div>
+
+                        <!-- Email Link -->
+                        <div class="contact-item">
+                            <i class="fa-regular fa-envelope"></i>
+                            <a href="mailto:info@desiginity.com"
+                                >info@desiginity.com</a
+                            >
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+880 123 456 7890</span>
+                        </div>
+
+                        <div style="margin-top: 20px">
+                            <a
+                                href="https://www.facebook.com/proDesiginity"
+                                target="_blank"
+                                class="social-btn"
+                            >
+                                <i class="fa-brands fa-facebook-f"></i> Visit
+                                Our Facebook Page
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2026 esignity PRO. All rights reserved.</p>
+        </footer>
+
+        <!-- JAVASCRIPT FOR NAVIGATION -->
+        <script src="./app.js"></script>
+    </body>
+</html>
