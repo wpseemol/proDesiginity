@@ -51,7 +51,7 @@ function sendEmail(event) {
         `New Project Inquiry: ${service} - ${name}`,
     );
     const body = encodeURIComponent(
-        `Hello esignity PRO,\n\n` +
+        `Hello ProDesignity,\n\n` +
             `Name: ${name}\n` +
             `Client Email: ${email}\n` +
             `Service Requested: ${service}\n\n` +
