@@ -33,3 +33,31 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+function sendEmail(event) {
+    event.preventDefault();
+
+    // Get input values
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const service = document.getElementById("service").value;
+    const message = document.getElementById("message").value;
+
+    // Recipient address
+    const recipient = "mdpitul@gmail.com";
+
+    // Format subject and body
+    const subject = encodeURIComponent(
+        `New Project Inquiry: ${service} - ${name}`,
+    );
+    const body = encodeURIComponent(
+        `Hello esignity PRO,\n\n` +
+            `Name: ${name}\n` +
+            `Client Email: ${email}\n` +
+            `Service Requested: ${service}\n\n` +
+            `Project Details:\n${message}\n`,
+    );
+
+    // Redirect to default mail client (Gmail/Outlook/Apple Mail)
+    window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+}

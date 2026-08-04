@@ -5,8 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>
-            esignity PRO | Creative Design Studio & Visual Identity Agency
+            esignity PRO | Creative Design, Web Development & E-Commerce Agency
         </title>
+
+        <!-- Favicons -->
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="./images/prodesignityicon.png"
+        />
 
         <!-- Fonts and Icons -->
         <link
@@ -19,72 +27,64 @@
         />
         <link rel="stylesheet" href="./style.css" />
 
-        <!-- 1. Basic Meta Data -->
+        <!-- 1. ENHANCED SEO METADATA -->
         <meta
             name="description"
-            content="esignity PRO is a modern creative design agency specializing in branding, UI/UX, and digital identity. We craft visionary web and graphic experiences that elevate your business."
+            content="esignity PRO is a creative agency specializing in Shopify development, Web design, Adobe Photoshop, Premiere Pro video editing, and visual brand identity."
         />
         <meta
             name="keywords"
-            content="design agency, brand identity, UI UX design, creative web design, esignity PRO, graphic design studio, modern branding, visual identity"
+            content="esignity PRO, Shopify Development, Web Development, Adobe Photoshop, Premiere Pro, UI/UX Design, Brand Identity, E-Commerce Solutions"
         />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta name="author" content="esignity PRO" />
 
-        <!-- 2. Canonical URL (Updated to your live domain) -->
+        <!-- Canonical URL -->
         <link rel="canonical" href="https://prodesignity.com/" />
 
-        <!-- 3. Open Graph Tags (For Facebook, LinkedIn, Discord) -->
+        <!-- Open Graph Tags (Facebook, LinkedIn) -->
         <meta property="og:type" content="website" />
         <meta
             property="og:title"
-            content="esignity PRO | Modern Creative Design Agency"
+            content="esignity PRO | Creative Design & Digital Solutions Agency"
         />
         <meta
             property="og:description"
-            content="We blend modern aesthetics with function. esignity PRO focuses on branding, UI/UX, and digital identity."
+            content="Transforming brands through high-converting Shopify stores, custom web development, video editing, and modern visual identities."
         />
         <meta property="og:url" content="https://prodesignity.com/" />
         <meta
             property="og:image"
-            content="https://prodesignity.com/logo-og-image.png"
+            content="https://prodesignity.com/images/prodesignityicon.png"
         />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="esignity PRO" />
 
-        <!-- 4. Twitter Card Tags -->
+        <!-- Twitter Card Tags -->
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-            name="twitter:title"
-            content="esignity PRO | Modern Creative Design Agency"
-        />
+        <meta name="twitter:title" content="esignity PRO | Creative Agency" />
         <meta
             name="twitter:description"
-            content="We blend modern aesthetics with function. esignity PRO focuses on branding, UI/UX, and digital identity."
+            content="Shopify Development, Custom Web Design, Graphic Design & Video Production."
         />
-        <meta name="twitter:site" content="@esignityPro" />
         <meta
             name="twitter:image"
-            content="https://prodesignity.com/logo-og-image.png"
+            content="https://prodesignity.com/images/prodesignityicon.png"
         />
 
-        <!-- 5. JSON-LD Structured Data -->
+        <!-- JSON-LD Structured Data for Local Business & Agency -->
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
-                "@type": "Organization",
+                "@type": "ProfessionalService",
                 "name": "esignity PRO",
                 "url": "https://prodesignity.com/",
-                "logo": "https://prodesignity.com/logo.png",
-                "description": "We blend modern aesthetics with function. esignity PRO focuses on branding, UI/UX, and digital identity.",
-                "contactPoint": {
-                    "@type": "ContactPoint",
-                    "telephone": "+880-123-456-7890",
-                    "contactType": "customer service",
-                    "availableLanguage": ["English"]
-                },
-                "sameAs": ["https://www.facebook.com/proDesiginity"]
+                "logo": "https://prodesignity.com/images/prodesignityicon.png",
+                "image": "https://prodesignity.com/images/prodesignityicon.png",
+                "description": "Modern creative agency specializing in Web Development, Shopify Solutions, Adobe Photoshop, Premiere Pro Video Production, and Brand Identity.",
+                "telephone": "+8801738142398",
+                "email": "mdpitul@gmail.com",
+                "sameAs": ["https://www.facebook.com/proDesiginity"],
+                "priceRange": "$$"
             }
         </script>
     </head>
@@ -93,15 +93,17 @@
         <div class="bg-orb orb-1"></div>
         <div class="bg-orb orb-2"></div>
 
-        <!-- NAVBAR -->
+        <!-- HEADER / NAVBAR -->
         <header>
-            <div class="brand-logo">
-                <div class="logo-bg-shape"></div>
-                <div class="logo-text">
-                    esig<span class="i-char">i</span>nity
-                    <span class="pro-text">PRO</span>
-                </div>
+            <div class="brand-logo" onclick="navigateTo('home')">
+                <img
+                    src="./images/prodesignityicon.png"
+                    alt="esignity PRO Logo"
+                    class="logo-img"
+                    style="height: 45px; width: auto"
+                />
             </div>
+
             <nav>
                 <ul>
                     <li>
@@ -110,7 +112,15 @@
                         >
                     </li>
                     <li>
+                        <a href="#" class="nav-link" data-page="services"
+                            >Services</a
+                        >
+                    </li>
+                    <li>
                         <a href="#" class="nav-link" data-page="about">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link" data-page="team">Team</a>
                     </li>
                     <li>
                         <a href="#" class="nav-link" data-page="contact"
@@ -119,6 +129,35 @@
                     </li>
                 </ul>
             </nav>
+
+            <div class="header-actions">
+                <div class="header-socials">
+                    <a
+                        href="https://wa.me/8801738142398"
+                        target="_blank"
+                        title="WhatsApp"
+                        ><i class="fa-brands fa-whatsapp"></i
+                    ></a>
+                    <a
+                        href="https://www.facebook.com/proDesiginity"
+                        target="_blank"
+                        title="Facebook"
+                        ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a href="mailto:mdpitul@gmail.com" title="Email Us"
+                        ><i class="fa-regular fa-envelope"></i
+                    ></a>
+                </div>
+                <a
+                    href="#"
+                    class="header-cta-btn"
+                    onclick="
+                        navigateTo('contact');
+                        return false;
+                    "
+                    >Get a Quote</a
+                >
+            </div>
         </header>
 
         <!-- MAIN CONTENT -->
@@ -126,21 +165,211 @@
             <!-- HOME SECTION -->
             <section id="home" class="page-section active">
                 <div class="hero">
-                    <h1>Creative Design<br />Solutions</h1>
-                    <p>
-                        We blend modern aesthetics with function to bring your
-                        brand's identity to life. esignity PRO is dedicated to
-                        visionary design.
-                    </p>
-                    <a
-                        href="#"
-                        class="cta-btn"
-                        onclick="
-                            navigateTo('contact');
-                            return false;
-                        "
-                        >Start a Project</a
+                    <span class="hero-badge"
+                        ><i class="fa-solid fa-wand-magic-sparkles"></i>
+                        Creative Design & Development</span
                     >
+                    <h1>
+                        Crafting Next-Gen <br /><span class="gradient-text"
+                            >Digital Experiences</span
+                        >
+                    </h1>
+                    <p>
+                        We elevate brands with high-converting Shopify stores,
+                        modern web development, video editing, graphics design,
+                        and visual identity.
+                    </p>
+                    <div class="hero-actions">
+                        <a
+                            href="#"
+                            class="cta-btn"
+                            onclick="
+                                navigateTo('contact');
+                                return false;
+                            "
+                            >Start a Project</a
+                        >
+                        <a
+                            href="#"
+                            class="secondary-btn"
+                            onclick="
+                                navigateTo('services');
+                                return false;
+                            "
+                            >Our Services <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                    </div>
+                </div>
+
+                <!-- SERVICES SHOWCASE ON HOMEPAGE -->
+                <div class="home-section-wrapper" style="margin-top: 60px">
+                    <div class="section-header">
+                        <div>
+                            <h2>
+                                <i
+                                    class="fa-solid fa-layer-group highlight-icon"
+                                ></i>
+                                What We Do
+                            </h2>
+                            <p class="section-subtitle">
+                                Full-service digital design, development, and
+                                video production.
+                            </p>
+                        </div>
+                        <a
+                            href="#"
+                            onclick="
+                                navigateTo('services');
+                                return false;
+                            "
+                            class="link-btn"
+                            >View All Details &rarr;</a
+                        >
+                    </div>
+
+                    <div class="services-grid">
+                        <div class="service-card glass-card">
+                            <div class="service-icon-box">
+                                <i
+                                    class="fa-brands fa-shopify service-icon"
+                                    style="color: #95bf47"
+                                ></i>
+                            </div>
+                            <h3>Shopify Development</h3>
+                            <p>
+                                Custom theme setup, Liquid development, store
+                                redesign, and conversion rate optimization.
+                            </p>
+                        </div>
+
+                        <div class="service-card glass-card">
+                            <div class="service-icon-box">
+                                <i class="fa-solid fa-code service-icon"></i>
+                            </div>
+                            <h3>Web Development</h3>
+                            <p>
+                                Fast, responsive, and custom website development
+                                built to scale your business online.
+                            </p>
+                        </div>
+
+                        <div class="service-card glass-card">
+                            <div class="service-icon-box">
+                                <i class="fa-solid fa-image service-icon"></i>
+                            </div>
+                            <h3>Adobe Photoshop</h3>
+                            <p>
+                                Professional photo editing, image retouching,
+                                product graphics, and digital manipulation.
+                            </p>
+                        </div>
+
+                        <div class="service-card glass-card">
+                            <div class="service-icon-box">
+                                <i class="fa-solid fa-film service-icon"></i>
+                            </div>
+                            <h3>Adobe Premiere Pro</h3>
+                            <p>
+                                High-quality video editing, color grading,
+                                motion graphics, and social media video
+                                production.
+                            </p>
+                        </div>
+
+                        <div class="service-card glass-card">
+                            <div class="service-icon-box">
+                                <i
+                                    class="fa-solid fa-laptop-code service-icon"
+                                ></i>
+                            </div>
+                            <h3>UI/UX Design</h3>
+                            <p>
+                                User-centered web and mobile app interfaces with
+                                smooth navigation and modern aesthetic.
+                            </p>
+                        </div>
+
+                        <div class="service-card glass-card">
+                            <div class="service-icon-box">
+                                <i class="fa-solid fa-palette service-icon"></i>
+                            </div>
+                            <h3>Brand Identity</h3>
+                            <p>
+                                Crafting unique logos, color palettes, and brand
+                                guidelines to establish your visual presence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICES SECTION -->
+            <section id="services" class="page-section">
+                <div class="services-content">
+                    <h2>Our Specialized Services</h2>
+                    <p class="section-subtitle">
+                        Everything you need to build and expand your online
+                        presence
+                    </p>
+
+                    <div class="services-grid">
+                        <div class="service-card glass-card">
+                            <i
+                                class="fa-brands fa-shopify service-icon"
+                                style="color: #95bf47"
+                            ></i>
+                            <h3>Shopify Development</h3>
+                            <p>
+                                Custom Liquid themes, app integrations, store
+                                setup, and e-commerce optimization.
+                            </p>
+                        </div>
+
+                        <div class="service-card glass-card">
+                            <i class="fa-solid fa-code service-icon"></i>
+                            <h3>Web Development</h3>
+                            <p>
+                                Building high-performing full-stack websites
+                                with clean, modern code standards.
+                            </p>
+                        </div>
+
+                        <div class="service-card glass-card">
+                            <i class="fa-solid fa-image service-icon"></i>
+                            <h3>Adobe Photoshop</h3>
+                            <p>
+                                Expert photo manipulation, banner creation,
+                                social media kits, and thumbnail design.
+                            </p>
+                        </div>
+
+                        <div class="service-card glass-card">
+                            <i class="fa-solid fa-film service-icon"></i>
+                            <h3>Adobe Premiere Pro</h3>
+                            <p>
+                                Professional video editing, dynamic cuts, color
+                                correction, and promotional reels.
+                            </p>
+                        </div>
+
+                        <div class="service-card glass-card">
+                            <i class="fa-solid fa-palette service-icon"></i>
+                            <h3>Brand Identity Design</h3>
+                            <p>
+                                Logos, typography, color palettes, and complete
+                                visual branding guidelines.
+                            </p>
+                        </div>
+
+                        <div class="service-card glass-card">
+                            <i class="fa-solid fa-laptop-code service-icon"></i>
+                            <h3>UI/UX Prototyping</h3>
+                            <p>
+                                Interactive Figma wireframes, web UI systems,
+                                and seamless user experiences.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -149,61 +378,205 @@
                 <div class="about-content">
                     <h2>Who We Are</h2>
                     <p>
-                        <span class="highlight">esignity PRO</span> is a
-                        design-focused creative agency dedicated to pushing the
-                        boundaries of visual identity.
+                        <span class="highlight">esignity PRO</span> is a design
+                        and development agency dedicated to pushing digital
+                        boundaries.
                     </p>
                     <p>
-                        Our approach combines minimalist aesthetics with
-                        powerful storytelling. We don't just create designs; we
-                        craft experiences that resonate with your audience.
-                    </p>
-                    <p>
-                        From branding to digital interfaces, we are your
-                        partners in building a strong, memorable, and
-                        <span class="highlight">modern</span> presence.
+                        Our approach combines modern dark aesthetics, fluid user
+                        experiences, and high-performing web engineering.
                     </p>
                 </div>
             </section>
 
-            <!-- CONTACT SECTION -->
+            <!-- TEAM SECTION -->
+            <section id="team" class="page-section">
+                <div class="team-content">
+                    <h2>Meet Our Team</h2>
+                    <p class="section-subtitle">
+                        The creative minds behind esignity PRO
+                    </p>
+                    <div class="team-grid">
+                        <div class="team-card glass-card">
+                            <div class="team-avatar">
+                                <i class="fa-solid fa-user-astronaut"></i>
+                            </div>
+                            <h3>Lead Designer</h3>
+                            <span class="team-role">Creative Director</span>
+                            <p>
+                                Specializing in visual hierarchy, branding, and
+                                video production.
+                            </p>
+                        </div>
+                        <div class="team-card glass-card">
+                            <div class="team-avatar">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h3>Full-Stack Developer</h3>
+                            <span class="team-role">Technical Lead</span>
+                            <p>
+                                Turning custom designs into fast, performant web
+                                applications and Shopify stores.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ENHANCED MODERN CONTACT SECTION -->
             <section id="contact" class="page-section">
                 <div class="contact-content">
-                    <h2>Get In Touch</h2>
-                    <div class="contact-card">
-                        <!-- Facebook Link -->
-                        <div class="contact-item">
-                            <i class="fa-brands fa-facebook-f"></i>
+                    <h2>Let's Build Something Great</h2>
+                    <p class="section-subtitle">
+                        Have a project in mind or need expert web & design
+                        services? Get in touch today.
+                    </p>
+
+                    <div class="contact-wrapper">
+                        <!-- Left Column: Quick Contact Cards -->
+                        <div class="contact-info-column">
+                            <!-- WhatsApp Card -->
                             <a
-                                href="https://www.facebook.com/proDesiginity"
+                                href="https://wa.me/8801738142398"
                                 target="_blank"
-                                >facebook.com/proDesiginity</a
+                                class="contact-card-v2 whatsapp-card"
                             >
-                        </div>
-
-                        <!-- Email Link -->
-                        <div class="contact-item">
-                            <i class="fa-regular fa-envelope"></i>
-                            <a href="mailto:info@desiginity.com"
-                                >info@desiginity.com</a
-                            >
-                        </div>
-
-                        <!-- Phone Number -->
-                        <div class="contact-item">
-                            <i class="fa-solid fa-phone"></i>
-                            <span>+880 123 456 7890</span>
-                        </div>
-
-                        <div style="margin-top: 20px">
-                            <a
-                                href="https://www.facebook.com/proDesiginity"
-                                target="_blank"
-                                class="social-btn"
-                            >
-                                <i class="fa-brands fa-facebook-f"></i> Visit
-                                Our Facebook Page
+                                <div class="card-icon-wrapper">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div class="card-details">
+                                    <span class="card-label"
+                                        >Direct WhatsApp</span
+                                    >
+                                    <span class="card-value"
+                                        >+880 1738-142398</span
+                                    >
+                                </div>
+                                <i
+                                    class="fa-solid fa-arrow-up-right-from-square card-arrow"
+                                ></i>
                             </a>
+
+                            <!-- Email Card -->
+                            <a
+                                href="mailto:mdpitul@gmail.com"
+                                class="contact-card-v2 email-card"
+                            >
+                                <div class="card-icon-wrapper">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </div>
+                                <div class="card-details">
+                                    <span class="card-label"
+                                        >Official Email</span
+                                    >
+                                    <span class="card-value"
+                                        >mdpitul@gmail.com</span
+                                    >
+                                </div>
+                                <i
+                                    class="fa-solid fa-arrow-up-right-from-square card-arrow"
+                                ></i>
+                            </a>
+
+                            <!-- Facebook Card -->
+                            <a
+                                href="https://www.facebook.com/proDesiginity"
+                                target="_blank"
+                                class="contact-card-v2 facebook-card"
+                            >
+                                <div class="card-icon-wrapper">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                                <div class="card-details">
+                                    <span class="card-label"
+                                        >Facebook Page</span
+                                    >
+                                    <span class="card-value"
+                                        >facebook.com/proDesiginity</span
+                                    >
+                                </div>
+                                <i
+                                    class="fa-solid fa-arrow-up-right-from-square card-arrow"
+                                ></i>
+                            </a>
+
+                            <!-- Working Hours Info Box -->
+                            <div class="working-hours-box">
+                                <i class="fa-solid fa-clock"></i>
+                                <div>
+                                    <strong>Fast Response Time</strong>
+                                    <p>
+                                        We typically respond within 1–2 hours on
+                                        WhatsApp and Email.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Direct Project Inquiry Form -->
+                        <div class="contact-form-column glass-card">
+                            <h3>Start a Project</h3>
+                            <form id="contactForm" onsubmit="sendEmail(event)">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        placeholder="John Doe"
+                                        required
+                                    />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        placeholder="john@example.com"
+                                        required
+                                    />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="service">Service Needed</label>
+                                    <select id="service" class="custom-select">
+                                        <option value="Shopify Development">
+                                            Shopify Development
+                                        </option>
+                                        <option value="Custom Web Development">
+                                            Custom Web Development
+                                        </option>
+                                        <option
+                                            value="Adobe Photoshop Graphic Design"
+                                        >
+                                            Adobe Photoshop Graphic Design
+                                        </option>
+                                        <option
+                                            value="Adobe Premiere Video Editing"
+                                        >
+                                            Adobe Premiere Video Editing
+                                        </option>
+                                        <option value="UI/UX Design & Branding">
+                                            UI/UX Design & Branding
+                                        </option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Project Details</label>
+                                    <textarea
+                                        id="message"
+                                        rows="4"
+                                        placeholder="Tell us about your project goals..."
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <button type="submit" class="submit-form-btn">
+                                    <span>Send Message</span>
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -215,7 +588,6 @@
             <p>&copy; 2026 esignity PRO. All rights reserved.</p>
         </footer>
 
-        <!-- JAVASCRIPT FOR NAVIGATION -->
         <script src="./app.js"></script>
     </body>
 </html>
