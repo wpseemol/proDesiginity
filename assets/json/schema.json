@@ -1,0 +1,57 @@
+{
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://prodesignity.com/#organization",
+    "name": "ProDesignity",
+    "alternateName": ["Pro Designity", "ProDesignity Agency"],
+    "url": "https://prodesignity.com/",
+    "logo": "https://prodesignity.com/assets/prodesignity-logo.png",
+    "image": "https://prodesignity.com/assets/prodesignity-logo.png",
+    "description": "ProDesignity is a digital agency providing Shopify development, web design and development, 3D and 2D animation, and animated video production.",
+    "email": "mdpitul@gmail.com",
+    "telephone": "+8801738142398",
+    "address": { "@type": "PostalAddress", "addressCountry": "BD" },
+    "areaServed": "Worldwide",
+    "sameAs": ["https://www.facebook.com/proDesiginity"],
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+8801738142398",
+        "contactType": "customer service",
+        "email": "mdpitul@gmail.com",
+        "availableLanguage": ["English", "Bengali"]
+    },
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services",
+        "itemListElement": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Shopify Development"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Web Design & Development"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "3D Animation & Product Visuals"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "2D Animation & Motion Graphics"
+                }
+            }
+        ]
+    }
+}
