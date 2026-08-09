@@ -1,0 +1,16 @@
+:root {
+    --ink: #06060f;
+    --ink-2: #0c0b1a;
+    --violet: #6b3ad6;
+    --blue: #3e74f5;
+    --orange: #f58527;
+    --paper: #eef0fa;
+    --muted: #9294b4;
+    --line: rgba(255, 255, 255, 0.1);
+    --surface: rgba(255, 255, 255, 0.035);
+    --grad: linear-gradient(100deg, var(--violet), var(--blue));
+    --display: "Archivo", "Arial Black", system-ui, sans-serif;
+    --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --pad: clamp(20px, 5vw, 80px);
+    --r: 18px;
+}

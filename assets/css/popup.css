@@ -1,6 +1,10 @@
 /* ============================================================
            POPUP OVERLAY
            ============================================================ */
+@import url("./variable.css");
+/* ============================================================
+   POPUP OVERLAY
+   ============================================================ */
 
 .popup-overlay {
     position: fixed;
@@ -9,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(6, 6, 15, 0.85);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     opacity: 0;
@@ -29,12 +33,12 @@
     position: relative;
     max-width: 520px;
     width: 100%;
-    background: #141414;
-    border-radius: 24px;
-    border: 1px solid rgba(212, 165, 116, 0.2);
+    background: var(--ink-2);
+    border-radius: var(--r);
+    border: 1px solid var(--line);
     box-shadow:
         0 40px 80px rgba(0, 0, 0, 0.8),
-        0 0 0 1px rgba(212, 165, 116, 0.05);
+        0 0 0 1px rgba(107, 58, 214, 0.08);
     overflow: hidden;
     transform: translateY(40px) scale(0.96);
     opacity: 0;
@@ -70,9 +74,9 @@
     top: 14px;
     right: 18px;
     z-index: 10;
-    background: rgba(255, 255, 255, 0.06);
+    background: var(--surface);
     border: none;
-    color: #b0a8a0;
+    color: var(--muted);
     font-size: 22px;
     cursor: pointer;
     width: 40px;
@@ -88,8 +92,8 @@
     backdrop-filter: blur(4px);
 }
 .popup-close:hover {
-    background: rgba(212, 165, 116, 0.2);
-    color: #f5f0eb;
+    background: rgba(107, 58, 214, 0.2);
+    color: var(--paper);
     transform: rotate(90deg);
 }
 
@@ -99,7 +103,7 @@
     height: 220px;
     object-fit: cover;
     display: block;
-    background: #1a1a1a;
+    background: var(--ink);
 }
 .popup-image-placeholder {
     width: 100%;
@@ -107,8 +111,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #1a1a1a, #2a221a);
-    color: #d4a574;
+    background: linear-gradient(135deg, var(--ink), var(--ink-2));
+    color: var(--violet);
     font-size: 48px;
     font-weight: 300;
 }
@@ -121,70 +125,75 @@
 .popup-title {
     font-size: 26px;
     font-weight: 700;
-    color: #f5f0eb;
+    color: var(--paper);
     letter-spacing: -0.5px;
     margin-bottom: 8px;
     line-height: 1.2;
+    font-family: var(--display);
 }
 .popup-title .accent {
-    color: #d4a574;
+    background: var(--grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .popup-desc {
     font-size: 15px;
-    color: #b0a8a0;
+    color: var(--muted);
     line-height: 1.7;
     margin-bottom: 22px;
 }
 .popup-desc strong,
 .popup-desc b {
-    color: #d4a574;
+    color: var(--paper);
     font-weight: 600;
 }
 .popup-desc a {
-    color: #d4a574;
+    color: var(--violet);
     text-decoration: underline;
 }
 
 .popup-cta {
     display: inline-block;
-    background: #d4a574;
-    color: #0a0a0a;
+    background: var(--grad);
+    color: var(--paper);
     padding: 12px 32px;
     border-radius: 40px;
     font-weight: 600;
     font-size: 15px;
     text-decoration: none;
     transition:
-        background 0.3s,
-        transform 0.2s;
+        transform 0.2s,
+        box-shadow 0.3s;
     border: none;
     cursor: pointer;
+    box-shadow: 0 0 20px rgba(107, 58, 214, 0.2);
 }
 .popup-cta:hover {
-    background: #e8c9a8;
     transform: scale(1.02);
+    box-shadow: 0 0 35px rgba(107, 58, 214, 0.35);
 }
 
 /* ---- popup footer ---- */
 .popup-footer {
     margin-top: 18px;
     font-size: 12px;
-    color: #6a625a;
+    color: var(--muted);
     display: flex;
     align-items: center;
     gap: 6px;
 }
 .popup-footer i {
-    color: #d4a574;
+    color: var(--violet);
 }
 
 /* ---- progress bar ---- */
 .popup-progress-track {
     width: 100%;
     height: 3px;
-    background: rgba(255, 255, 255, 0.06);
-    border-radius: 0 0 24px 24px;
+    background: var(--line);
+    border-radius: 0 0 var(--r) var(--r);
     overflow: hidden;
     position: absolute;
     bottom: 0;
@@ -193,8 +202,8 @@
 .popup-progress-fill {
     height: 100%;
     width: 100%;
-    background: #d4a574;
-    border-radius: 0 0 24px 24px;
+    background: var(--grad);
+    border-radius: 0 0 var(--r) var(--r);
     transition: width 0.15s linear;
 }
 
@@ -202,11 +211,11 @@
 .popup-pause-badge {
     display: none;
     font-size: 11px;
-    color: #d4a574;
-    background: rgba(212, 165, 116, 0.12);
+    color: var(--violet);
+    background: rgba(107, 58, 214, 0.12);
     padding: 2px 12px;
     border-radius: 20px;
-    border: 1px solid rgba(212, 165, 116, 0.15);
+    border: 1px solid rgba(107, 58, 214, 0.15);
     margin-left: 8px;
 }
 .popup-pause-badge.visible {
