@@ -1,0 +1,245 @@
+/* ============================================================
+           POPUP OVERLAY
+           ============================================================ */
+
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.5s ease,
+        visibility 0.5s ease;
+    padding: 20px;
+}
+.popup-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ---- POPUP CARD ---- */
+.popup-card {
+    position: relative;
+    max-width: 520px;
+    width: 100%;
+    background: #141414;
+    border-radius: 24px;
+    border: 1px solid rgba(212, 165, 116, 0.2);
+    box-shadow:
+        0 40px 80px rgba(0, 0, 0, 0.8),
+        0 0 0 1px rgba(212, 165, 116, 0.05);
+    overflow: hidden;
+    transform: translateY(40px) scale(0.96);
+    opacity: 0;
+    transition:
+        transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+        opacity 0.5s ease;
+    cursor: default;
+}
+.popup-overlay.active .popup-card {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+/* ---- hide state ---- */
+.popup-overlay.hiding .popup-card {
+    transform: translateY(30px) scale(0.94);
+    opacity: 0;
+    transition:
+        transform 0.5s ease-in,
+        opacity 0.5s ease-in;
+}
+.popup-overlay.hiding {
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.5s ease-in,
+        visibility 0.5s ease-in;
+}
+
+/* ---- close button ---- */
+.popup-close {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.06);
+    border: none;
+    color: #b0a8a0;
+    font-size: 22px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:
+        background 0.3s,
+        color 0.3s,
+        transform 0.2s;
+    backdrop-filter: blur(4px);
+}
+.popup-close:hover {
+    background: rgba(212, 165, 116, 0.2);
+    color: #f5f0eb;
+    transform: rotate(90deg);
+}
+
+/* ---- card image ---- */
+.popup-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    background: #1a1a1a;
+}
+.popup-image-placeholder {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a1a, #2a221a);
+    color: #d4a574;
+    font-size: 48px;
+    font-weight: 300;
+}
+
+/* ---- card body ---- */
+.popup-body {
+    padding: 28px 32px 32px;
+}
+
+.popup-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #f5f0eb;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+.popup-title .accent {
+    color: #d4a574;
+}
+
+.popup-desc {
+    font-size: 15px;
+    color: #b0a8a0;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+.popup-desc strong,
+.popup-desc b {
+    color: #d4a574;
+    font-weight: 600;
+}
+.popup-desc a {
+    color: #d4a574;
+    text-decoration: underline;
+}
+
+.popup-cta {
+    display: inline-block;
+    background: #d4a574;
+    color: #0a0a0a;
+    padding: 12px 32px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    transition:
+        background 0.3s,
+        transform 0.2s;
+    border: none;
+    cursor: pointer;
+}
+.popup-cta:hover {
+    background: #e8c9a8;
+    transform: scale(1.02);
+}
+
+/* ---- popup footer ---- */
+.popup-footer {
+    margin-top: 18px;
+    font-size: 12px;
+    color: #6a625a;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.popup-footer i {
+    color: #d4a574;
+}
+
+/* ---- progress bar ---- */
+.popup-progress-track {
+    width: 100%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 0 0 24px 24px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.popup-progress-fill {
+    height: 100%;
+    width: 100%;
+    background: #d4a574;
+    border-radius: 0 0 24px 24px;
+    transition: width 0.15s linear;
+}
+
+/* ---- pause badge ---- */
+.popup-pause-badge {
+    display: none;
+    font-size: 11px;
+    color: #d4a574;
+    background: rgba(212, 165, 116, 0.12);
+    padding: 2px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(212, 165, 116, 0.15);
+    margin-left: 8px;
+}
+.popup-pause-badge.visible {
+    display: inline-block;
+    animation: fadePulse 1.2s ease-in-out infinite;
+}
+@keyframes fadePulse {
+    0%,
+    100% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* ---- responsive ---- */
+@media (max-width: 480px) {
+    .popup-body {
+        padding: 20px 20px 24px;
+    }
+    .popup-title {
+        font-size: 22px;
+    }
+    .popup-image,
+    .popup-image-placeholder {
+        height: 170px;
+    }
+    .popup-close {
+        top: 10px;
+        right: 12px;
+        width: 34px;
+        height: 34px;
+        font-size: 18px;
+    }
+}
