@@ -15,25 +15,25 @@
     },
     {
         "avatar": "AK",
-        "name": "Alex Kim",
-        "role": "3D Artist",
-        "description": "Product modelling, lighting and rendering for stills and short 3D motion pieces.",
-        "image": "",
+        "name": "Antor Halder",
+        "role": "2D animator",
+        "description": "Dedicated 2D animator specializing in the craft of hand-drawn motion. I transform traditional, hand-crafted sketches into captivating digital stories.",
+        "image": "./assets/team-images/antorhalder.jpeg",
         "social": {
             "portfolio": "https://alexkim.art",
             "instagram": "https://instagram.com/alexkim.3d"
         }
     },
     {
-        "avatar": "SR",
-        "name": "Sam Rivera",
-        "role": "Motion Designer",
-        "description": "2D animation, explainers and ad creative — from storyboard to final export.",
-        "image": "",
+        "avatar": "YI",
+        "name": "Yeasin Iqbal",
+        "role": "3D Product design &amp; Modeling",
+        "description": "",
+        "image": "./assets/team-images/YeasinIqbal.png",
         "social": {
-            "portfolio": "https://samrivera.motion",
-            "linkedin": "https://linkedin.com/in/samrivera",
-            "vimeo": "https://vimeo.com/samrivera"
+            "portfolio": "",
+            "linkedin": "",
+            "vimeo": ""
         }
     },
     {
