@@ -1,26 +1,16 @@
 [
     {
         "avatar": "MP",
-        "name": "Md Pitul",
-        "role": "Founder &amp; Shopify Developer",
-        "description": "Leads builds and client calls. Handles theme development, migrations and store performance.",
-        "image": "",
+        "name": "Abdullah Pitul",
+        "role": "Founder &amp; 3D Product Designer",
+        "description": "",
+        "image": "./assets/team-images/AbdullahPitul.png",
         "social": {
-            "portfolio": "#",
-            "linkedin": "#",
-            "github": "#",
-            "twitter": "#"
-        }
-    },
-    {
-        "avatar": "WPS",
-        "name": "Seemol Chakroborti",
-        "role": "Web Developer &amp; Designer",
-        "description": "Turns brand direction into layouts and design systems that survive contact with real content.",
-        "image": "./assets/team-images/wpseemol.jpg",
-        "social": {
-            "portfolio": "https://wpseemol.prodesignity.com/",
-            "linkedin": "https://linkedin.com/in/wpseemol"
+            "portfolio": "",
+            "linkedin": "",
+            "github": "",
+            "twitter": "",
+            "facebook": ""
         }
     },
     {
@@ -44,6 +34,19 @@
             "portfolio": "https://samrivera.motion",
             "linkedin": "https://linkedin.com/in/samrivera",
             "vimeo": "https://vimeo.com/samrivera"
+        }
+    },
+    {
+        "avatar": "WPS",
+        "name": "Seemol Chakroborti",
+        "role": "Web Developer &amp; Designer",
+        "description": "Full-Stack Web Developer | React, Next.js, Laravel & Shopify | Crafting performant web apps, custom backends, and high-converting e-commerce stores.",
+        "image": "./assets/team-images/wpseemol.jpeg",
+        "social": {
+            "portfolio": "https://wpseemol.prodesignity.com/",
+            "linkedin": "https://linkedin.com/in/wpseemol",
+            "github": "https://github.com/wpseemol",
+            "facebook": "https://facebook.com/wpseemol"
         }
     }
 ]

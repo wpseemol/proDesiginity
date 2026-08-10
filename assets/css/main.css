@@ -1247,6 +1247,27 @@ p {
     color: var(--paper);
 }
 
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adds clean spacing between icons */
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    opacity: 0.85;
+}
+
 /* ============ RESPONSIVE ============ */
 @media (max-width: 1000px) {
     .g-4 {
